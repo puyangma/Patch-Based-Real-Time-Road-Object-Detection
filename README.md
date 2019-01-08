@@ -31,7 +31,7 @@ https://pjreddie.com/yolo/.
 [[Paper]](https://pjreddie.com/media/files/papers/YOLOv3.pdf) [[Original Implementation]](https://github.com/pjreddie/darknet)
 
 ## Installation
-    $ git clone https://github.com/naveen401/cs230
+    $ git clone https://github.com/puyangma/Patch-Based-Real-Time-Road-Object-Detection
     $ cd PyTorch-YOLOv3/
     $ sudo pip3 install -r requirements.txt
 
@@ -45,7 +45,7 @@ https://pjreddie.com/yolo/.
     download in data/bdd
     
 
-## Modifications Made to Existing Repo
+## Modifications Made to Existing Repo (authors: Puyang Ma, Naveen Krishnamurthi, Megan Rowe)
     1.In the config folder, we wrote a modified version of yolov3.cfg named yolo-obj.cfg. In this script, we changed classes to the     number of BDD classes (4), in each of the 3 [yolo] layers, changed filters = (classes + 5) x 3 = 27 in each of the three [convolutional] layers before the [yolo] layers, and changed line batch = 64 and subdivisions = 8 for training.
     2.Created file bdd.names in the data folder with objects names each in new line
     3.Created file obj.data in the config folder containing the number of classes, paths to the labels for train and validation sets, path to the bdd.names file, and evaluation metric.
