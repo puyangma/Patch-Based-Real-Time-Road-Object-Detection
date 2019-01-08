@@ -1,0 +1,6 @@
+classes= 4
+train=data/bdd/trainvalno5k.txt
+valid=data/bdd/5k.txt
+names=data/bdd.names
+backup=backup/
+eval=coco
